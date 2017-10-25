@@ -1,0 +1,105 @@
+<header class="header index-two-header">
+
+<div ng-include="'templates/menu.html'"></div>
+      </header> <!-- end header -->
+      <div class="rq-page-content">
+        <div class="rq-content-block"> 
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default"  style="width:80%;margin-left:10%;">
+    <div class="panel-heading">
+      <h4 class="panel-title" align="center" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+        User Details
+      </h4>
+    </div>
+    <div id="collapse1" class="panel-collapse collapse in">
+      <div class="panel-body">
+        <table class="table">
+          <thead>
+            <tr>
+            <th>Name</th>
+              <th>Phone</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{{name}}</td>
+              <td>{{phone}}</td>
+              <td>{{email}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default" style="width:80%;margin-left:10%">
+    <div class="panel-heading">
+      <h4 class="panel-title" align="center" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+        Ride History
+      </h4>
+    </div>
+    <div id="collapse2" class="panel-collapse collapse">
+      <div class="panel-body">
+        <table class="table">
+          <thead>
+            <tr>
+            <th>Transaction Id</th>
+            <th>Amount</th>
+            <th>Date From</th>
+            <th>Date To</th>
+            <th>Status</th>
+            <!-- <th>Location</th>
+            <th>Bikes</th> -->
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="x in transactions">
+              <td>{{x.transId}}</td>
+              <td>{{x.amount}}</td>
+              <td>{{x.from}}</td>
+              <td>{{x.to}}</td>
+              <td ng-if="x.status == completed"><button class="btn btn-success">Completed</button></td>
+              <td ng-if="x.status == cancelled"><button class="btn btn-danger" ng-disabled>Cancelled</button></td>
+              <td ng-if="x.status == canCancel"><button class="btn btn-warning" ng-click="cancelRide(x.transId)">Cancel Ride</button></td>
+              <!-- <td>{{x.location}}</td>
+              <td>{{x.bikes}}</td> -->
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      
+      </div>
+      </div>
+    <div class="panel panel-default" style="width:80%;margin-left:10%">
+      <div class="panel-heading">
+        <h4 class="panel-title" align="center" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+          Write to us for Improvement
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body">
+        
+        <div class="well well-sm">
+                <form name="complaint" ng-submit="submit(message)">
+                <div class="row">
+                    <div class="col-md-10">
+                        <div class="form-group">
+                            <label for="name">
+                                Message</label>
+                            <textarea name="message" id="message" class="form-control" ng-model="message" rows="9" cols="25" required
+                                placeholder="Minimum 10 Characters" ng-minlength="10"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-primary pull-right" id="btnContactUs" ng-disabled="complaint.message.$invalid">
+                            Submit</button>
+                    </div>
+                </div>
+                </form>
+            </div>
+        
+        </div>
+        </div>
+      </div>
+</div> </div></div>

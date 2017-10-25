@@ -1,0 +1,111 @@
+<div class="header-body" style="background: url('./img/bg.jpg') top center no-repeat; background-size: 100% 70%;">
+          <div class="container" style="margin-top:-250px;">
+            <!--<h1 style="color:#ffb43d;"><strong>Rent A Vehicle In 3 Steps</strong></h1>
+            <p  style="color:#ffb43d;">Looking to rent a vehicle for an upcoming vacation or business trip? In GetSetWheels, we make renting
+            a vehicle seamless so you can get right on your way. </p>-->
+            <div id="rq-tabs-horizontal-portion" class="rq-tabs horizontal">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                          <li role="presentation" class="active"><a href="#tab_hor_1" aria-controls="tab_hor_1" role="tab" data-toggle="tab">Bikes</a></li>
+                          <li role="presentation"><a href="#tab_hor_2" aria-controls="tab_hor_2" role="tab" data-toggle="tab">Cars</a></li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content" style="padding:10px 0; border-style:none;">
+                          <div role="tabpanel" class="tab-pane" id="tab_hor_2">
+                            <form name="searchForm1" ng-submit="searchCars(search1)">        
+            <div class="rq-search-container">
+              <div class="rq-search-single" ng-init="search1.vehicle='cars'">
+                <div class="rq-search-content" ng-init="search1.location='mumbai'">
+                  <span class="rq-search-heading">Location</span>           
+                  
+                  <label class="radio-inline"><input type="radio" name="location" value="mumbai" ng-model="search1.location" checked>Mumbai</label>
+                  <label class="radio-inline"><input type="radio" name="location" value="pune" ng-model="search1.location">Pune</label>
+                  
+                </div>
+              </div>
+              <div class="rq-search-single">
+                <div class="rq-search-content" ng-init="search1.vehicle='cars'">
+                  <span class="rq-search-heading">Pick up</span>
+                  <input type="text" class="rq-form-element" name="from1"  id="car-from" placeholder="From" ng-model="search1.from" required/>
+                  <i class="ion-chevron-down datepicker-arrow"></i>
+                </div>
+
+              </div>
+              <div class="rq-search-single">
+                <div class="rq-search-content">
+                  <span class="rq-search-heading">Return</span>
+                  <input type="text" class="rq-form-element" name="to1" id="car-to" placeholder="Return Date" ng-model="search1.to" required/>
+                  <i class="ion-chevron-down datepicker-arrow"></i>
+                </div>
+              </div>
+              
+              <div class="rq-search-single search-btn">
+                <div class="rq-search-content">
+                  <button type="submit" class="rq-btn rq-btn-primary fluid-btn" ng-disabled="searchForm1.$invalid">Search Cars<i class="arrow_right"></i></button>
+                </div>
+              </div>
+            </div>
+             <!-- <div>{{search1}}</div> -->
+            </form>
+                          </div>
+                          <div role="tabpanel" class="tab-pane active" id="tab_hor_1">
+                            <form name="searchForm" ng-submit="searchBikes(search)">        
+            <div class="rq-search-container">
+              <div class="rq-search-single">
+                <div class="rq-search-content" ng-init="search.location='mumbai'">
+                  <span class="rq-search-heading">Location</span>           
+                  
+                  <label class="radio-inline"><input type="radio" name="location" value="mumbai" ng-model="search.location" checked>Mumbai</label>
+                  <label class="radio-inline"><input type="radio" name="location" value="pune" ng-model="search.location">Pune</label>
+                  
+                </div>
+              </div>
+              <div class="rq-search-single">
+                <div class="rq-search-content">
+                  <span class="rq-search-heading">Pick up</span>
+                  <input type="text" class="rq-form-element" name="from"  id="bike-from" placeholder="From" ng-model="search.from" required/>
+                  <i class="ion-chevron-down datepicker-arrow"></i>
+                </div>
+
+              </div>
+              <div class="rq-search-single">
+                <div class="rq-search-content">
+                  <span class="rq-search-heading">Return</span>
+                  <input type="text" class="rq-form-element" name="to" id="bike-to" placeholder="Return Date" ng-model="search.to" required/>
+                  <i class="ion-chevron-down datepicker-arrow"></i>
+                </div>
+              </div>
+              
+              <div class="rq-search-single search-btn">
+                <div class="rq-search-content">
+                  <button type="submit" class="rq-btn rq-btn-primary fluid-btn" ng-disabled="searchForm.$invalid">Search Bikes<i class="arrow_right"></i></button>
+                </div>
+              </div>
+            </div>
+             <!-- <div>{{search1}}</div> -->
+            </form>
+                          </div>
+                        </div>
+                      </div>
+            
+            <!-- <div class="group-car-image">
+              <img src="img/banner-group-car.png" alt="">
+            </div> -->
+             <div class="rq-counting-list home-two-version" style="border-color: #000;">
+              <ul class="list-unstyled">
+                <li>
+                  <span style="color:white;" class="count-result"  data-from="5" data-to="71" data-speed="5000" data-refresh-interval="50"></span>
+                  <span style="color:white;" class="count-category">Bikes</span>
+                </li>
+                <li>
+                  <span style="color:white;" class="count-result"  data-from="5" data-to="21" data-speed="5000" data-refresh-interval="50"></span>
+                  <span style="color:white;" class="count-category">Cars</span>
+                </li>
+                <li>
+                  <span style="color:white;" class="count-result" data-from="5" data-to="47" data-speed="5000" data-refresh-interval="50"></span>
+                  <span style="color:white;" class="count-category">Bookings</span>
+                </li>
+              </ul>
+            </div><!-- -->
+          </div>
+        </div> <!-- /.header-body -->

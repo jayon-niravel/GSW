@@ -1,0 +1,23 @@
+<header class="header index-two-header">
+
+<div ng-include="'templates/menu.html'"></div>
+      </header>
+      <div class="rq-page-content">
+      <center>
+      <img ng-src="./img/All Clear Tick.png" style="width:7%;height:7%;margin-top:60px;" />
+        <div class="table-responsive">
+	<table class="table table-striped" style="width:60%;" >
+		<thead>
+			<tr><th  colspan="2"><h3 align="center">Transaction Successful</h3></th></tr>
+		</thead>
+		<tbody>
+		<tr><td class="text-left" style="font-size:18px;">Transaction Id:</td><td class="text-right" style="font-size:18px;">{{transactionId}}</td></tr>
+		<tr><td class="text-left" style="font-size:18px;">Payment:</td><td class="text-right" style="font-size:18px;">{{amount}}</td></tr>
+		<!--<tr><td class="text-left" style="font-size:18px;">Pickup Location:</td><td class="text-right" style="font-size:18px;">{{location}}</td></tr>
+		<tr><td class="text-left" style="font-size:18px;">Vehicle:</td><td class="text-right" style="font-size:18px;">{{vehicle}}</td></tr>-->
+		<tr><td class="text-left" style="font-size:18px;">Booking Time & Date</td><td class="text-right" style="font-size:18px;">{{from}}</td></tr>
+		<tr><td class="text-left" style="font-size:18px;">Returning Time & Date</td><td class="text-right" style="font-size:18px;">{{to}}</td></tr>
+		</tbody>
+	</table>
+	</div></center>
+      </div>

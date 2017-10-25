@@ -1,0 +1,58 @@
+<div id="login_modal" class="modal fade" role="dialog" ng-controller="loginController">
+	<div class="modal-dialog">
+
+
+		<div class="modal-content">
+			<div class="modal-header">
+				<h6 class="text-right"><span class="glyphicon glyphicon-remove" data-dismiss="modal" id="close" style="cursor:pointer"></span></h6>
+			</div>
+			<div class="modal-body">
+				<div class="container-fluid">
+					<button type="button" class="btn btn-lg btn-primary btn-block" ng-click="FBLogin()">Sign-In with Facebook</button>
+					<br/>
+					<button type="button" class="btn btn-lg btn-danger btn-block" ng-click="gLogin()">Sign-In with Google</button>
+					<br/>
+					<button type="button" class="btn btn-lg btn-info btn-block" data-dismiss="modal" ui-sref="signup">Create An Account</button>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<div class="text-center">
+					<h1>Already on GetSetWheels?</h1>
+					<form class="form-horizontal" name="loginForm" ng-submit="login(credentials)"novalidate>
+						<div class="container-fluid">
+							<div class="form-group">
+								<div>
+									<input type="email" class="form-control input-lg" name="username" ng-model="credentials.username" placeholder="Enter email/User Id" required>
+								</div>
+								<div class="alert alert-danger" ng-show="loginForm.username.$dirty && loginForm.username.$invalid">
+								<span ng-show="loginForm.username.$error.email">Enter valid Email Address</span>
+								<span ng-show="loginForm.username.$error.required">Email Address Required</span>
+								</div>
+							</div>
+							<div class="form-group">
+
+								<div>
+									<input type="password" class="form-control input-lg" name="password" ng-model="credentials.password" placeholder="Enter Password" required minlength="6">
+								</div>
+								<div class="alert alert-danger" ng-show="loginForm.password.$dirty && loginForm.password.$invalid">
+								<span ng-show="loginForm.password.$error.minlength">Minimum 6 characters Required.</span>
+								<span ng-show="loginForm.password.$error.required">Password Required.</span>
+								</div>
+							</div>
+							<div class="form-group">
+								<div >
+									<button type="submit" ng-disabled="loginForm.$invalid" class="btn btn-lg btn-info btn-block">Login</button>
+								</div>
+							</div>
+							<!-- <div>
+								{{loginForm | json}}
+							</div> -->
+						</div>
+					</form>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+</div>

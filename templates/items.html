@@ -1,0 +1,229 @@
+<header class="header index-two-header">
+
+<div ng-include="'templates/menu.html'"></div>
+      </header> <!-- end header -->
+       <!-- /. inner pagebanner -->
+      <div class="rq-page-content">
+        <div class="rq-content-block gray-bg small-padding-top">
+          <div class="container">
+                   <form name="searchForm" ng-submit="reSearch(search)">
+            <div class="rq-search-container">
+                      
+            
+              <div class="rq-search-single">
+                <div class="rq-search-content" ng-init="search.location='mumbai'">
+                  <span class="rq-search-heading">Location</span>           
+                  
+                  <label class="radio-inline"><input type="radio" name="location" value="mumbai" ng-model="search.location" checked>Mumbai</label>
+                  <label class="radio-inline"><input type="radio" name="location" value="pune" ng-model="search.location">Pune</label>
+                  
+                </div>
+              </div>
+              <div class="rq-search-single">
+                <div class="rq-search-content">
+                  <span class="rq-search-heading">Pick up</span>
+                  <input type="text" class="rq-form-element" name="from"  id="from" placeholder="From" ng-model="search.from" required/>
+                  <i class="ion-chevron-down datepicker-arrow"></i>
+                </div>
+
+              </div>
+              <div class="rq-search-single">
+                <div class="rq-search-content">
+                  <span class="rq-search-heading">Return</span>
+                  <input type="text" class="rq-form-element" name="to" id="to" placeholder="Return Date" ng-model="search.to" required/>
+                  <i class="ion-chevron-down datepicker-arrow"></i>
+                </div>
+              </div>
+              
+              <div class="rq-search-single search-btn">
+                <div class="rq-search-content">
+                  <button type="submit" class="rq-btn rq-btn-primary fluid-btn" ng-disabled="searchForm.$invalid">Search<i class="arrow_right"></i></button>
+                </div>
+              </div>
+            
+             <!-- <div>{{search1}}</div> -->
+            
+            </div>
+            </form>
+            <div class="row" style="margin:0; margin-top:50px;">
+             <div class="filter-list">
+            <form name="searchForm" style="margin: 0 auto;">
+            
+            <div class="col-md-2 col-sm-12" style="padding: 10px 0;"><h5 style="display:inline;">Filter by</h5></div>
+            <div class="col-md-6 col-sm-12" style="padding: 10px 0;">
+              <label class="radio-inline" style="color:black;"><input type="radio" name="optradio" ng-model="sort" value="-vcount">Availability</label>&nbsp;
+  <label class="radio-inline" style="color:black;"><input type="radio" name="optradio" ng-model="sort" value="Daily_rate">Price(Low)</label>&nbsp;
+<label class="radio-inline" style="color:black;"><input type="radio" name="optradio" ng-model="sort" value="-Daily_rate">Price(High)</label>&nbsp;
+  <label class="radio-inline" style="color:black;"><input type="radio" name="optradio" ng-model="sort" value="Location">Location</label>
+            </div>
+            <div class="col-md-4 col-sm-12" style="padding: 10px 0;">
+              <button class="rq-btn rq-btn-primary" ng-disabled="searchForm.$invalid">Cart [{{products}}]<i class="arrow_right"></i></button>
+              <button class="rq-btn rq-btn-primary" ng-disabled="searchForm.$invalid" ng-click="proceedToCheckout()">Checkout<i class="arrow_right"></i></button>
+            </div>
+            <div class="rq-listing-top-bar-filter-option">
+         
+                
+           
+
+        
+
+  
+
+            
+            
+          </form>
+          </div>
+          
+          
+          </div>
+          </div>
+              <!-- <div class="filter-list">
+                <h5>Filter by</h5>
+                <div class="filter-single">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle" ng-model="sort" value="-vcount">
+                      Availability<span class="caret"></span>
+                    </button>
+                    
+                  </div>
+                </div>
+                <div class="filter-single">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle">
+                      Price(Low)<span class="caret"></span>
+                    </button>
+                    
+                  </div>
+                </div>
+                <div class="filter-single">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle">
+                      Price(High)<span class="caret"></span>
+                    </button>
+                    
+                  </div>
+                </div>
+                <div class="filter-single">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle">
+                      Location<span class="caret"></span> 
+                    </button>
+                    
+                  </div>
+                </div>
+              </div> -->
+              <!-- <div class="rq-grid-list-view-option">
+                <a  href="#" data-class="rq-listing-grid"><i class="ion-grid"></i></a>
+                <a class="active" href="#" data-class="rq-listing-list"><i class="ion-navicon"></i></a>
+              </div> -->
+            </div>
+
+            <div class="rq-car-listing-wrapper">
+              <div class="rq-listing-choose rq-listing-grid">
+                <div class="row">
+                                    
+                  <div class="col-md-3 col-sm-6" style="padding: 10px ;" ng-repeat="x in items | orderBy:sort">
+                    <div class="listing-single">
+                      <div class="listing-img">
+                      <span class="notify-badge" ng-if="x.discount != 0">{{x.discount}}% OFF</span>
+                        <img ng-src="img/img/{{x.img_name}}" alt="">
+                      </div>
+                      <div class="listing-details">
+                        <!-- <h5 class="car-brand">BMW</h5> -->
+                        <h3 class="car-name"><a href="#">{{x.Vname}}</a></h3>
+                        <!-- <ul class="rating-list">
+                          <li><i class="ion-star"></i></li>
+                          <li><i class="ion-star"></i></li>
+                          <li><i class="ion-star"></i></li>
+                          <li><i class="ion-star"></i></li>
+                          <li><i class="ion-star"></i></li>
+                        </ul> -->
+                        <ul>
+                          <!-- <li>Class: <span>Premium</span></li> -->
+                          <li>Location: <span>{{x.Location}}</span></li>
+                          <li>Max Available:  <span>{{x.vcount}}</span></li>
+                          <li>Details: <span>{{x.Description}}</span></li>
+                          <li></li>
+                        </ul>
+                        <div class="listing-footer">
+                          <span>
+                          <button ng-disabled="x.quantity == x.vcount" class="rq-btn rq-btn-primary fluid-btn" ng-click="addToCart(x)">Add To Cart</button></span>
+                          <span ng-if="x.discount == 0">
+                            Starting at Rs.<span class="price">{{x.Daily_rate}}</span> / day
+                          </span>
+                          <span ng-if="x.discount != 0">
+                            Starting at Rs.<span class="price"><b style="text-decoration: line-through">{{x.Daily_rate}}</b>&nbsp;{{x.Daily_rate-((x.discount/100)*x.Daily_rate)}}</span> / day
+                          </span>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              <!-- <div class="rq-pagination">
+                <nav>
+                  <ul class="rq-pagination-list">
+                    <li class="pagin-text">
+                      <a href="#" aria-label="Previous">
+                        <span aria-hidden="true"><i class="arrow_left"></i> Prev</span>
+                      </a>
+                    </li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a class="center-dot" href="#">...</a></li>
+                    <li><a href="#">12</a></li>
+                    <li class="pagin-text">
+                      <a href="#" aria-label="Next">
+                        <span aria-hidden="true">next <i class="arrow_right"></i></span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div> -->
+            </div>
+
+          </div>
+        </div>  <!-- /.rq-content-block -->
+      </div>
+      <script>
+    
+    var pick = new MaterialDatetimePicker({
+
+    })
+      .on('submit', function(d) {
+        //$('#field').value = d;
+        var date = new Date(d);
+        var str = date.getFullYear()+'-'+("0" + (date.getMonth()+1)).slice(-2)+'-'+("0" + date.getDate()).slice(-2)+' '+("0" + date.getHours()).slice(-2)+':00';
+        $('input[name=from]').val(str);
+        angular.element(jQuery('#from')).triggerHandler('input')
+        //alert(d);
+      });
+      var pick1 = new MaterialDatetimePicker({
+
+    })
+      .on('submit', function(d) {
+        //$('#field').value = d;
+        var date = new Date(d);
+        var str = date.getFullYear()+'-'+("0" + (date.getMonth()+1)).slice(-2)+'-'+("0" + date.getDate()).slice(-2)+' '+("0" + date.getHours()).slice(-2)+':00';
+        $('input[name=to]').val(str);
+        angular.element(jQuery('#to')).triggerHandler('input')
+        //alert(d);
+      });
+      //console.log(angular.element(document.querySelector('[ng-controller="ApplicationControler"]')).scope());
+    var e = document.querySelector('#from');
+    e.addEventListener('click', function() {
+      pick.open();
+    }, false);
+    var e1 = document.querySelector('#to');
+    e1.addEventListener('click', function() {
+      pick1.open();
+    }, false);
+    
+
+    
+
+</script>
+      

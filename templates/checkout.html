@@ -1,0 +1,86 @@
+<header class="header index-two-header">
+
+<div ng-include="'templates/menu.html'"></div>
+
+      </header> <!-- end header -->
+
+      <div class="rq-page-content"> <!-- start of page content -->
+        <div class="rq-content-block">
+          <div class="rq-shopping-content-block">
+            <div class="container">
+              <div class="rq-cart-items">
+                <h4>Your Cart items</h4>
+                <div class="cart-items-table">
+                  <div class="table-responsive">
+                    <table>
+                      <thead>
+                        <tr class="table-head">
+                          <th>VEHICLE NAME</th>
+                          <th>PRICE</th>
+                          <th>QUANTITY</th>
+                          <th>TOTAL</th>
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr ng-repeat="x in cart">
+                          <td>
+                            <img ng-src="img/checkout/{{x.img_name}}" alt="">
+                            <div class="details">
+                              <h5>{{x.Vname}}</h5>
+                              <ul class="items">
+                                <li>Arrive Date: <span>{{to}}</span></li>
+                                <li>Depature Date: <span>{{from}}</span> </li>
+                                <li>Pickup Location: <span>{{x.Location}}</span></li>
+                              </ul>
+                            </div>
+                          </td>
+                          <td>Rs.{{x.Daily_rate-((x.discount/100)*x.Daily_rate)}}/day</td>
+                          <td>{{x.quantity}}</td>
+                          <td>Rs. {{x.quantity*(x.Daily_rate-((x.discount/100)*x.Daily_rate))}}/-</td>
+                          <td>
+                            <div class="close-edit-btn">
+                              <a ng-click="removeFromCart(x)"><i class="icon_close"></i></a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="2"></td>
+                          <td colspan="2"><b>Grand Total</b></td>
+                          <td>Rs. {{total-((discount/100)*total)}}/-</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="col-md-12" style="margin-top:10px;color:#000;">
+                                <label><input type="checkbox" data-toggle="modal" value=true ng-model="checked" data-target="#tnc">I Accept the <a href="#/TnC" target="_blank">Terms And Condition</a></label>
+                                
+                </div>
+                <div class="checkout-btn">
+                  <div class="left-section">
+                    <!-- <a href="#" class="rq-btn rq-btn-transparent">clear shopping cart</a> -->
+                    <a href="#/items" class="rq-btn rq-btn-transparent">continue shopping</a>
+                  </div>
+                  <div class="right-section">
+                  <button type="button" class="rq-btn rq-btn-primary btn-large fluid" ng-disabled="!checked" ng-click="payment(cart)">proceed to checkout</button>
+                  </div>
+                </div>
+              </div>
+              
+
+
+            </div>
+          </div>
+        </div>
+      </div> 
+
+      <!-- <div class="rq-grand-total">
+                      <div class="rq-cart-options-title">
+                        <h5>Sub total <span>$120.10</span></h5>
+                        <h4>Grand total<span>$227.05</span></h4>
+                      </div>
+                      <div class="rq-cart-options-content">
+                        <button type="button" class="rq-btn rq-btn-primary btn-large fluid">proceed to checkout</button>
+                      </div>
+                    </div> -->

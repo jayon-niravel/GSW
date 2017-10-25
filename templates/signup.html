@@ -1,0 +1,66 @@
+<header class="header index-two-header">
+
+<div ng-include="'templates/menu.html'"></div>
+      </header> <!-- end header -->
+      <div class="rq-page-content">
+        <div class="rq-content-block">          
+          <div class="rq-registration-content-single small-bottom-margin"> <!-- start of registration portion -->
+            <div class="container">
+              <div class="rq-login-form no-border">
+                <h4>Don't have an account! Register now </h4>
+                <form name="createAccountForm" class="form-inline"  ng-submit="createAccount(credentials)" novalidate>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <input type="text" class="rq-form-control reverse" name="name" ng-model="credentials.name" placeholder="Name" required>
+                    </div>
+                  <!-- <div class="col-md-6">
+                    <input type="text" class="rq-form-control reverse" placeholder="Username" required>
+                  </div> -->
+                  
+                  <div class="col-md-12">
+                    <input type="email" class="rq-form-control reverse" placeholder="Email Address" name="email" ng-model="credentials.email" required>
+                  </div>
+                  <div class="col-md-12">
+                    <input type="number" class="rq-form-control reverse" name="phone" ng-model="credentials.phone" placeholder="Phone" required minlength="10" maxlength="10">
+                  </div>
+                  <div class="col-md-12">
+                    <input type="password" class="rq-form-control reverse" name="password" ng-model="credentials.password" placeholder="Password" required minlength="6">
+                  </div>
+                  <div class="col-md-12">
+                    <input type="password" class="rq-form-control reverse" name="cpassword" ng-model="credentials.cpassword" placeholder="Re - Password" required minlength="6">
+                  </div>
+                  <div class="col-md-12" style="color:red;">
+                    <div class="alert alert-danger" ng-show="createAccountForm.email.$dirty && createAccountForm.email.$invalid">
+                <span ng-show="createAccountForm.email.$error.email">Enter valid Email Address</span>
+                <span ng-show="createAccountForm.email.$error.required">Email Address Required</span>
+                </div>
+                <div class="alert alert-danger" ng-show="createAccountForm.phone.$dirty && createAccountForm.phone.$invalid">
+                <span ng-show="createAccountForm.phone.$error">Enter valid 10 digit Mobile Number</span>
+                </div>
+                <div class="alert alert-danger" ng-show="createAccountForm.name.$dirty && createAccountForm.name.$invalid">
+                <span ng-show="createAccountForm.name.$error">Enter valid Name</span>
+                </div>
+                <div class="alert alert-danger" ng-show="createAccountForm.password.$dirty && createAccountForm.password.$invalid">
+                <span ng-show="createAccountForm.password.$error.required">Password is mandatory</span>
+                <span ng-show="createAccountForm.password.$error.minlength">Minimum 6 Characters</span>
+                </div>
+                <div ng-if="credentials.password != credentials.cpassword">
+                <div class="alert alert-danger">
+                <span>Password Not Matches</span>
+                </div>
+                </div>
+
+
+                  </div>
+                  <div class="col-md-12">
+                    <div class="register-button">
+                      <button type="submit" class="rq-btn rq-btn-primary border-radius" ng-disabled="createAccountForm.$invalid && (createAccountForm.password != createAccountForm.cpassword)">Register <i class="arrow_right"></i></button>
+                    </div>
+                  </div>
+                  </div> <!-- end of registration section -->
+                </form>
+              </div>
+            </div>
+          </div><!--  end of registration form portin -->
+        </div>
+      </div>

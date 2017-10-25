@@ -1,0 +1,72 @@
+<header class="header index-two-header">
+<script>
+$(function() {
+   $('body').scrollTop(0);
+});
+</script>
+<div ng-include="'templates/menu.html'"></div>
+      </header>
+      <div class="inner-page-banner" style="background: url('img/inner-banner/sunset-summer-motorcycle.jpg') top center no-repeat; background-size: cover;">
+        <div class="rq-overlay"></div>
+        <div class="container">
+          <div class="rq-title-container bredcrumb-title text-center">
+            <h2 class="rq-title">Contact Us</h2>
+            <ol class="breadcrumb rq-subtitle">
+              <li><a href="#">Home</a></li>
+              <li class="active">Contact Us</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+<div class="rq-page-content">
+<div class="rq-content-block">
+          <div class="container">
+            <div class="rq-contact-us-grid-block"> <!-- start info portion -->
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="grid-block-single">
+                    <i class="icon_mobile"></i>
+                    <h3>Phone</h3>
+                    <p>Phone 01: (+91) 72619 37108</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="grid-block-single">
+                    <i class="icon_pin_alt"></i>
+                    <h3>Address</h3>
+                    <p>Opal Ria,Rajhans Dreams complex ,Stella, </p>
+                    <p> Vasai(WEST), Maharashtra 401202</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="grid-block-single">
+                    <i class="icon_mail_alt"></i>
+                    <h3>Email</h3>
+                    <p>help@getsetwheels.com</p>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- end info portion -->
+
+            <div class="rq-contact-us-form-content"> <!-- start message form -->
+              <h3>If you got any questions <br>please do not hesitate to send us a message</h3>
+              <form action="#">
+                <input type="text" class="contact-form-input" placeholder="Your name">
+                <input type="email" class="contact-form-input" placeholder="Your email">
+                <input type="text" class="contact-form-input" placeholder="Subject">
+                <textarea class="contact-form-input" placeholder="Message"></textarea>
+                <div class="submit-btn">
+                  <button type="submit" class="rq-btn rq-btn-primary">Send Message</button>
+                </div>
+              </form>
+            </div> <!-- end message form -->
+            <div class="rq-contact-us-map"> <!-- start map portion -->
+              <div id="map"></div>
+            </div> <!-- end map portion -->
+          </div>
+        </div>
+</div>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0QI6vd531_4xsTobCg_J1_6BZOEolRbs&libraries=visualization&callback=initMap">
+    </script>
+    <script src="js/customMap.js" type="text/javascript"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>

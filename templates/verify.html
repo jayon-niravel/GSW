@@ -1,0 +1,30 @@
+<header class="header index-two-header">
+
+<div ng-include="'templates/menu.html'"></div>
+      </header> <!-- end header -->
+      <div class="rq-page-content">
+        <div class="rq-content-block"> 
+        <center>         
+          <div class="rq-registration-content-single small-bottom-margin"> <!-- start of registration portion -->
+            <div class="container">
+              <div class="rq-login-form no-border">
+                <h4>Enter Verification Code Sent on Mobile Number XXXX-XXX-{{ph}}</h4>
+                <form class="form-inline"  ng-submit="verify(otp)" method="post" >
+                  <div class="row">
+                  <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                      <input type="number" class="rq-form-control reverse" id="phone" ng-model="otp" placeholder="OTP" required>
+                    </div>
+                  <div class="col-md-12">
+                    <div class="register-button">
+                      <button type="submit" class="rq-btn rq-btn-primary border-radius">Verify <i class="arrow_right"></i></button>
+                    </div>
+                  </div>
+                  </div> <!-- end of registration section -->
+                </form>
+              </div>
+            </div>
+          </div><!--  end of registration form portin -->
+          </center>
+        </div>
+      </div>

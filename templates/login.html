@@ -1,0 +1,72 @@
+<header class="header index-two-header">
+
+<div ng-include="'templates/menu.html'"></div>
+      </header> <!-- end header -->
+      <div class="rq-page-content">
+        <div class="rq-content-block">
+          <div class="rq-registration-content-single"> <!-- start of login form portion -->
+            <div class="container">
+              <h4>Login your account</h4>
+              <div class="rq-login-form">
+                <form name="loginForm" ng-submit="login(credentials)" novalidate>
+                  <div class="row">
+                    <div class="col-md-5">
+                      <input type="email" class="rq-form-control" name="username" ng-model="credentials.username" placeholder="Enter email/User Id" required>
+                    </div>
+                    
+                    <div class="col-md-5">
+                      <input type="password" class="rq-form-control"  name="password" ng-model="credentials.password" placeholder="Enter Password" required minlength="6">
+                    </div>
+                    
+                    <div class="col-md-2">
+                      <button type="submit" ng-disabled="loginForm.$invalid" class="rq-btn rq-btn-primary fluid border-radius">Login <i class="arrow_right"></i></button>
+                    </div>
+                    <div class="col-md-12" style="color:red;">
+                      <div class="alert alert-danger" ng-show="loginForm.username.$dirty && loginForm.username.$invalid">
+                      <span ng-show="loginForm.username.$error.email">Enter valid Email Address</span>
+                <span ng-show="loginForm.username.$error.required">Email Address Required</span>
+                </div>
+                <div class="alert alert-danger" ng-show="loginForm.password.$dirty && loginForm.password.$invalid">
+                <span ng-show="loginForm.password.$error.minlength">Minimum 6 characters Required.</span>
+                <span ng-show="loginForm.password.$error.required">Password Required.</span>
+                </div>
+                    </div>
+                    <!-- <div class="col-md-12">
+                      <div class="rq-checkbox">
+                      </div>
+                    </div> -->
+                    <div class="col-md-12">
+                      <div class="remember-me">
+                        <span class="rq-checkbox">
+                          <input type="checkbox" id="remember-me">
+                          <label for="remember-me">Keep me loged in</label>
+                        </span>
+                        <span class="forgotpass">
+                          <a href="#/sendMail">Forgot your password ?</a>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="col-md-12 btn btn-info"><h4><a href="#/signup">Don't have an account! Register now</a> </h4></div>
+                  </div>
+                </form>
+                <div> <!-- start social icon div -->
+                <div class="row">
+                  <div class="col-md-12">
+                    <h5 align="center">or login with</h5><br/>
+                  </div>
+                </div>
+                  <div class="row">
+                  <div class="col-md-6 col-md-offset-3">
+                  <button type="submit" class="rq-btn rq-btn-primary fluid border-radius" ng-click="gLogin()" style="margin-bottom:5px;background-color: #c00;">
+                  Google <i class="arrow_right"></i></button><br>
+                  <button type="submit" class="rq-btn rq-btn-primary fluid border-radius" ng-click="FBLogin()" style="background-color: #3b5998">Facebook <i class="arrow_right"></i></button>
+                    <!-- <li><a href="#" class="fb"><i class="social_facebook"></i></a></li>
+                    <li><a href="#" class="gp"><i class="social_googleplus"></i></a></li> -->
+                  </div>
+                  </div>
+                </div> <!-- end social icon div -->
+              </div> <!-- end login div -->
+            </div>
+          </div> <!-- end of login form portion -->
+        </div>
+      </div>

@@ -1,0 +1,96 @@
+<nav class="navbar navbar-default home-two-nav">
+          <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                                                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#/default"><img src="./img/home-two-logo.png" alt=""/></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <!--<li class="active">-->
+                <!--<a href="index.html">Home</a>-->
+                <!--</li>-->
+                <li class="dropdown active">
+                  <a href="#/default" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                                                                      aria-haspopup="true" aria-expanded="false">Home <!-- <span class="ion-chevron-down"></span> --></a>
+                  <!-- <ul class="dropdown-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index-two.html">Home Version Two</a></li>
+                  </ul> -->
+                </li>
+                <li class="dropdown">
+                  <!--<a href="#/process" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                                                                                 aria-haspopup="true" aria-expanded="false">Process<!--  <span class="ion-chevron-down"></span> </a>-->
+                                                                                                 <a data-toggle="tooltip" title="Coming Soon!">Offer's</a>
+                  <!-- <ul class="dropdown-menu">
+                    <li><a href="car-listing-grid.html">Car listing grid</a></li>
+                    <li><a href="car-listing-list.html">Car listing list</a></li>
+                    <li><a href="listing-detail.html">Listing details</a></li>
+                  </ul> -->
+                </li>
+                <li class="dropdown">
+                  <a href="#/blog" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                                                                             aria-haspopup="true" aria-expanded="false">Blog<!--  <span class="ion-chevron-down"></span> --></a>
+                  <!-- <ul class="dropdown-menu">
+                    <li><a href="blog-listing.html">Blog Listing</a></li>
+                    <li><a href="post-single.html">Blog Post</a></li>
+                  </ul> -->
+                </li>
+                <li class="dropdown">
+                  <a href="#/checkout" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                                                                             aria-haspopup="true" aria-expanded="false" ng-if="currentUser">Cart<!--  <span class="ion-chevron-down"></span> --></a>
+                  <!-- <ul class="dropdown-menu">
+                    <li><a href="blog-listing.html">Blog Listing</a></li>
+                    <li><a href="post-single.html">Blog Post</a></li>
+                  </ul> -->
+                </li>
+                <!-- <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                                                             aria-haspopup="true" aria-expanded="false">Page <span class="ion-chevron-down"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="about-us.html">About</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="shopping-cart.html">shopping cart</a></li>
+                    <li><a href="registration.html">Registration</a></li>
+                  </ul>
+                </li> -->
+                <li class="logo">
+                  <a href="index.html"><img style="height:45px;width:180px;" src="img/logo.png" alt=""></a>
+                </li>
+                <li class="">
+                  <a href="#/about">About US</a>
+                </li>
+                <li class="">
+                  <a href="#/contact">Contact</a>
+                </li>
+                <li class="login-register-link" ng-if="!currentUser"><a href="#/login">
+                    Login</a>
+                </li>
+                <li class="login-register-link" ng-if="currentUser"><a href="#/details">
+                    Account</a>
+                </li>
+                <li class="login-register-link" ng-if="currentUser"><a ng-click="logout()">
+                    Logout</a>
+                </li>
+
+                <!-- <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                                                             aria-haspopup="true" aria-expanded="false">EN<span class="ion-chevron-down"></span></a>
+                  <ul class="dropdown-menu with-language">
+                    <li><a href="#">Fr</a></li>
+                    <li><a href="#">De</a></li>
+                  </ul>
+                </li> -->
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav> 
+        
