@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Elements</title>
+    <!-- Main style -->
+    <link href='https://fonts.googleapis.com/css?family=Poppins:300,400,500,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/turbo.style.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body data-spy="scroll" data-target="#elements-menu">
+    <div id="fakeloader">
+      <div class="spinner5">
+        <div class="cube1"></div>
+        <div class="cube2"></div>
+      </div>
+    </div>
+    <div id="main-wrapper">
+      <header class="header">
+        <nav class="navbar navbar-default" id="sticker">
+          <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                                                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html"><img src="./img/company-logo.png" alt=""/></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a href="index.html" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                                                                      aria-haspopup="true" aria-expanded="false">Home <span class="ion-chevron-down"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index-two.html">Home Version Two</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="car-listing-grid.html" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                                                                                 aria-haspopup="true" aria-expanded="false">Listing <span class="ion-chevron-down"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="car-listing-grid.html">Car listing grid</a></li>
+                    <li><a href="car-listing-list.html">Car listing list</a></li>
+                    <li><a href="listing-detail.html">Listing details</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="blog-listing.html" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                                                                             aria-haspopup="true" aria-expanded="false">Blog <span class="ion-chevron-down"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="blog-listing.html">Blog Listing</a></li>
+                    <li><a href="post-single.html">Blog Post</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                                                             aria-haspopup="true" aria-expanded="false">Page <span class="ion-chevron-down"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="about-us.html">About</a></li>
+                    <li><a href="contact-us.html">Contact us</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="shopping-cart.html">shopping cart</a></li>
+                    <li><a href="registration.html">Registration</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown active">
+                  <a href="elements.html">Elements</a>
+                </li>
+                <li class="login-register-link right-side-link"><a href="registration.html">
+                    <i class="icon_lock-open_alt"></i>Login</a>
+                </li>
+                <li class="dropdown right-side-link">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                                                             aria-haspopup="true" aria-expanded="false">ENG<span class="ion-chevron-down"></span></a>
+                  <ul class="dropdown-menu with-language">
+                    <li><a href="#">Fr</a></li>
+                    <li><a href="#">De</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown right-side-link last">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                                                             aria-haspopup="true" aria-expanded="false">USD<span class="ion-chevron-down"></span></a>
+                  <ul class="dropdown-menu with-language">
+                    <li><a href="#">USD</a></li>
+                    <li><a href="#">Eur</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+      </header> <!-- end header -->
+
+      <div class="rq-page-content">
+        <div class="rq-content-block no-bottom-padding">
+          <div class="container">
+            <div class="rq-title-container bredcrumb-title text-center small">
+              <h2 class="rq-title">Elements</h2>
+              <ol class="breadcrumb rq-subtitle">
+                <li><a href="#">Home</a></li>
+                <li class="active">Elements</li>
+              </ol>
+            </div>
+            <div class="blog-grid-wrapper">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-8"> <!-- start of elements portion -->
+                    <div class="element-single">
+                      <h3 class="elements-title">Tabs</h3>
+                      <div id="rq-tabs-horizontal-portion" class="rq-tabs horizontal">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                          <li role="presentation"><a href="#tab_hor_1" aria-controls="tab_hor_1" role="tab" data-toggle="tab">Tab1</a></li>
+                          <li role="presentation" class="active"><a href="#tab_hor_2" aria-controls="tab_hor_2" role="tab" data-toggle="tab">Tab2</a></li>
+                          <li role="presentation"><a href="#tab_hor_3" aria-controls="tab_hor_3" role="tab" data-toggle="tab">Tab3</a></li>
+                          <li role="presentation"><a href="#tab_hor_4" aria-controls="tab_hor_4" role="tab" data-toggle="tab">Tab4</a></li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                          <div role="tabpanel" class="tab-pane active" id="tab_hor_1">
+                            No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know is blend mol
+                          </div>
+                          <div role="tabpanel" class="tab-pane" id="tab_hor_2">
+                            because it is pleasure, but because those who do not know is blend mol
+                            No one rejects, dislikes, or avoids pleasure itself,
+                          </div>
+                          <div role="tabpanel" class="tab-pane" id="tab_hor_3">
+                            No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know is blend mol
+                          </div>
+                          <div role="tabpanel" class="tab-pane" id="tab_hor_4">
+                            because it is pleasure, but because those who do not know is blend mol
+                            No one rejects, dislikes, or avoids pleasure itself,
+                          </div>
+                        </div>
+                      </div> <!-- end of horizontal tab -->
+
+                      <div class="rq-tabs vertical"> <!-- start of vertical tab -->
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                          <li role="presentation" class="active"><a href="#tab_ver_1" aria-controls="tab_ver_1" role="tab" data-toggle="tab">Tab1</a></li>
+                          <li role="presentation"><a href="#tab_ver_2" aria-controls="tab_ver_2" role="tab" data-toggle="tab">Tab2</a></li>
+                          <li role="presentation"><a href="#tab_ver_3" aria-controls="tab_ver_3" role="tab" data-toggle="tab">Tab3</a></li>
+                          <li role="presentation"><a href="#tab_ver_4" aria-controls="tab_ver_4" role="tab" data-toggle="tab">Tab4</a></li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                          <div role="tabpanel" class="tab-pane active" id="tab_ver_1">
+                            do not know is blend mol how to pursue pleasure ration ignitation. Lorem ipsum dolor sit amet know is
+                            blend mol how to pursue pleasure ration ignitation.Lorem ipsum dolor sit amet. No one rejects, dislikes,
+                            or avoids pleasure itself, because Lorem ipsum dolor sit amet know.
+                            No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because
+                            those who do not know is blend mol how to pursue pleasure ration ignitation.Lorem ipsum dolor sit amet.
+                            No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who
+                          </div>
+                          <div role="tabpanel" class="tab-pane" id="tab_ver_2">
+                            No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because
+                            blend mol how to pursue pleasure ration ignitation.Lorem ipsum dolor sit amet. No one rejects, dislikes,
+                            or avoids pleasure itself, because Lorem ipsum dolor sit amet know.
+                            No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who
+                            those who do not know is blend mol how to pursue pleasure ration ignitation.Lorem ipsum dolor sit amet.
+                            do not know is blend mol how to pursue pleasure ration ignitation. Lorem ipsum dolor sit amet know is
+                          </div>
+                          <div role="tabpanel" class="tab-pane" id="tab_ver_3">
+                            those who do not know is blend mol how to pursue pleasure ration ignitation.Lorem ipsum dolor sit amet.
+                            or avoids pleasure itself, because Lorem ipsum dolor sit amet know.
+                            No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who
+                            do not know is blend mol how to pursue pleasure ration ignitation. Lorem ipsum dolor sit amet know is
+                            blend mol how to pursue pleasure ration ignitation.Lorem ipsum dolor sit amet. No one rejects, dislikes,
+                            No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because
+                          </div>
+                          <div role="tabpanel" class="tab-pane" id="tab_ver_4">
+                            No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who
+                            do not know is blend mol how to pursue pleasure ration ignitation. Lorem ipsum dolor sit amet know is
+                            No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because
+                            those who do not know is blend mol how to pursue pleasure ration ignitation.Lorem ipsum dolor sit amet.
+                            blend mol how to pursue pleasure ration ignitation.Lorem ipsum dolor sit amet. No one rejects, dislikes,
+                            or avoids pleasure itself, because Lorem ipsum dolor sit amet know.
+                          </div>
+                        </div>
+                      </div> <!-- end of vertical tab -->
+                    </div>
+                    <div id="rq-accordions-portion" class="element-single">
+
+                      <h3 class="elements-title">Accordions</h3>
+                      <div class="rq-accordions"> <!-- start of accordion -->
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                          <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                              <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                  <i class="fa fa-cube"></i> Our Mission
+                                </a>
+                              </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                              <div class="panel-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                              <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                  <i class="fa fa-pencil" aria-hidden="true"></i> What we do!
+                                </a>
+                              </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                              <div class="panel-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                              <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                  <i class="fa fa-database" aria-hidden="true"></i>Our company's value
+                                </a>
+                              </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                              <div class="panel-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div> <!-- end of accordin -->
+                    </div>
+                    <div id="rq-button-portion" class="element-single"> <!-- start of button element -->
+                      <h3 class="elements-title">Buttons</h3>
+                      <div class="button-content">
+                        <button type="button" class="rq-btn rq-btn-primary btn-large border-radius">Large button</button>
+                        <button type="button" class="rq-btn rq-btn-primary btn-medium border-radius">Medium button</button>
+                        <button type="button" class="rq-btn rq-btn-default btn-small border-radius ">Small button</button>
+                        <button type="button" class="rq-btn rq-btn-dashed btn-mini dashed-border">Mini button</button>
+                      </div>
+                      <div class="button-content">
+                        <button type="button" class="rq-btn rq-btn-primary btn-large border-radius-round">Large button</button>
+                        <button type="button" class="rq-btn rq-btn-primary btn-medium border-radius-round">Medium button</button>
+                        <button type="button" class="rq-btn rq-btn-default btn-small border-radius-round ">Small button</button>
+                        <button type="button" class="rq-btn rq-btn-dashed btn-mini dashed-border border-radius-round">Mini button</button>
+                      </div>
+                    </div> <!-- end of button element -->
+
+                    <div id="rq-pricing-portion" class="element-single">
+                      <h3 class="elements-title">Pricing Tables</h3>
+                      <div class="rq-pricing-table-wrapper">
+                        <div class="rq-pricing-item">
+                          <h4>Basic</h4>
+                          <div class="rq-price">
+                            <h2>$17<span>/month</span></h2>
+                            <span>Billed anually or $19<br> month to month</span>
+                          </div>
+                          <div class="rq-pricing-details">
+                            <ul class="rq-pricing-offer-list">
+                              <li class="rq-pricing-offer"><i class="icon_check"></i>1 User</li>
+                              <li class="rq-pricing-offer"><i class="icon_check"></i>1 Dashboard</li>
+                              <li class="rq-pricing-offer"><i class="icon_check"></i>5 Properties</li>
+                            </ul>
+                          </div>
+                          <div class="rq-pricing-button">
+                            <button class="rq-btn btn-price fluid">Purchase<i class="arrow_right"></i></button>
+                          </div>
+                        </div>
+                        <div class="rq-pricing-item">
+                          <h4>Professional</h4>
+                          <div class="rq-price">
+                            <h2>$53<span>/month</span></h2>
+                            <span>Billed anually or $19<br> month to month</span>
+                          </div>
+                          <div class="rq-pricing-details">
+                            <ul class="rq-pricing-offer-list">
+                              <li class="rq-pricing-offer"><i class="icon_check"></i>3 User</li>
+                              <li class="rq-pricing-offer"><i class="icon_check"></i>Unlimited Dashboards</li>
+                              <li class="rq-pricing-offer"><i class="icon_check"></i>10 Properties</li>
+                              <li class="rq-pricing-offer"><i class="icon_check"></i>Custom CSS</li>
+                            </ul>
+                          </div>
+                          <div class="rq-pricing-button">
+                            <button class="rq-btn btn-price fluid">Purchase<i class="arrow_right"></i></button>
+                          </div>
+                        </div>
+                        <div class="rq-pricing-item">
+                          <h4>Ultimate</h4>
+                          <div class="rq-price">
+                            <h2>$76<span>/month</span></h2>
+                            <span>Billed anually or $19<br> month to month</span>
+                          </div>
+                          <div class="rq-pricing-details">
+                            <ul class="rq-pricing-offer-list">
+                              <li class="rq-pricing-offer"><i class="icon_check"></i>20 User</li>
+                              <li class="rq-pricing-offer"><i class="icon_check"></i>Unlimited Dashboards</li>
+                              <li class="rq-pricing-offer"><i class="icon_check"></i>50 Properties</li>
+                              <li class="rq-pricing-offer"><i class="icon_check"></i>Custom CSS</li>
+                            </ul>
+                          </div>
+                          <div class="rq-pricing-button">
+                            <button class="rq-btn btn-price fluid">Purchase<i class="arrow_right"></i></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div id="rq-facts-box-portion" class="element-single"> <!-- start of facts box -->
+                      <h3 class="elements-title">Facts Box</h3>
+                      <div class="rq-facts-box">
+                        <div class="row">
+                          <div class="col-md-3 col-sm-3">
+                            <div class="rq-facts-single">
+                              <i class="ion-android-happy"></i>
+                              <span class="fact-box-count" data-from="100" data-to="233" data-speed="5000" data-refresh-interval="50"></span>
+                              <p class="fact-box-title">Happy Clients</p>
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-sm-3">
+                            <div class="rq-facts-single">
+                              <i class="ion-code-working"></i>
+                              <span class="fact-box-count" data-from="300" data-to="637" data-speed="5000" data-refresh-interval="50"></span>
+                              <p class="fact-box-title">Line of codes</p>
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-sm-3">
+                            <div class="rq-facts-single">
+                              <i class="ion-monitor"></i>
+                              <span class="fact-box-count" data-from="300" data-to="530" data-speed="5000" data-refresh-interval="50"></span>
+                              <p class="fact-box-title">Project Completed</p>
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-sm-3">
+                            <div class="rq-facts-single">
+                              <i class="ion-android-star-outline"></i>
+                              <span class="fact-box-count" data-from="30" data-to="152" data-speed="5000" data-refresh-interval="50"></span>
+                              <p class="fact-box-title">Awards win</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div> <!-- end of facts box -->
+                    <div id="rq-counter-portion" class="element-single"> <!-- start of counter timer -->
+                      <h3 class="elements-title">Counter</h3>
+                      <div class="time-content">
+                        <div id="countdowntimer"><span id="given_date"></span></div>
+                        <ul class="timer-division">
+                          <li>Days</li>
+                          <li>Hours</li>
+                          <li>Minutes</li>
+                          <li>Seconds</li>
+                        </ul>
+                      </div>
+                    </div> <!-- end of counter timer -->
+
+                    <div id="rq-progress-horizontal-portion" class="element-single"> <!-- start of progress bar horizontal -->
+                      <h3 class="elements-title">Progress bar</h3>
+                      <div class="rq-progress-bar-content">
+                        <div class="progress-single">
+                          <h3 class="progress-title">graphic design</h3>
+                          <div class="progress">
+                            <div class="progress-bar one" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+                              <span>70%</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="progress-single">
+                          <h3 class="progress-title">Adobe Photshop</h3>
+                          <div class="progress">
+                            <div class="progress-bar two" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+                              <span>95%</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="progress-single">
+                          <h3 class="progress-title">Adobe Photshop</h3>
+                          <div class="progress">
+                            <div class="progress-bar three" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+                              <span>50%</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="progress-bar-content cirle-progress">
+                        <div class="progress-single">
+                          <div class="c100 p90">
+                            <span>90%</span>
+                            <div class="slice">
+                              <div class="bar"></div>
+                              <div class="fill"></div>
+                            </div>
+                          </div>
+                          <h3 class="progress-title">Photshop</h3>
+                        </div>
+                        <div class="progress-single">
+                          <div class="c100 p70">
+                            <span>70%</span>
+                            <div class="slice">
+                              <div class="bar"></div>
+                              <div class="fill"></div>
+                            </div>
+                          </div>
+                          <h3 class="progress-title">illustration</h3>
+                        </div>
+                        <div class="progress-single">
+                          <div class="c100 p80">
+                            <span>80%</span>
+                            <div class="slice">
+                              <div class="bar"></div>
+                              <div class="fill"></div>
+                            </div>
+                          </div>
+                          <h3 class="progress-title">web design</h3>
+                        </div>
+                      </div>
+                    </div> <!-- end of progress bor horizontal -->
+
+                  </div> <!-- end of elements portion -->
+                  <div class="col-md-4"> <!-- start of side bar -->
+                    <div class="rq-sidebar" id="elements-menu">
+                      <h3 class="elements-title">Menus</h3>
+                      <ul class="nav nav-stacked rq-elements-menu">
+                        <li class="active"><a href="#rq-tabs-horizontal-portion">Tabs <i class="fa fa-th-list"></i></a></li>
+                        <li ><a href="#rq-accordions-portion">Accordions <i class="fa fa-sort-desc"></i></a></li>
+                        <li ><a href="#rq-button-portion">Buttons <i class="fa fa-sort-desc"></i></a></li>
+                        <li ><a href="#rq-pricing-portion">Pricing Table <i class="fa fa-money"></i></a></li>
+                        <li ><a href="#rq-facts-box-portion">Facts box <i class="fa fa-link"></i></a></li>
+                        <li ><a href="#rq-counter-portion">Counter <i class="fa fa-clock-o"></i></a></li>
+                        <li ><a href="#rq-progress-horizontal-portion">Progress bar <i class="fa fa-tasks"></i></a></li>
+                        <li ><a href="#rq-pie-chart-portion">Pie Chart <i class="fa fa-fire"></i></a></li>
+                      </ul>
+                    </div>
+                  </div> <!-- end of side bar -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /.content-block -->
+      </div> <!-- /.page-content -->
+    </div> <!-- end #main-wrapper -->
+
+    <footer class="rq-footer">
+      <div class="rq-main-footer">
+        <div class="container">
+          <button class="toggle-widget">Footer widget</button>
+          <div class="footer-widget">
+            <div class="row">
+              <div class="col-md-3 col-sm-3">
+                <div class="widget-list">
+                  <ul>
+                    <li><a href="#">Site map</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Affiliate</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-3">
+                <div class="widget-list">
+                  <ul class="address">
+                    <li><a href="#">Our Location</a></li>
+                    <li><a href="#">Career</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-3">
+                <div class="widget-list">
+                  <ul class="address">
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Car Blog</a></li>
+                    <li><a href="#">Location</a></li>
+                    <li><a href="#">Press</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-3">
+                <div class="widget-list">
+                  <div class="rq-newsletter">
+                    <h5>Sign up for get our newsletter</h5>
+                    <form action="#">
+                      <input class="fq-newsletter-form" type="text" placeholder="Your Email...">
+                      <button class="rq-btn" type="submit"><i class="ion-android-send"></i></button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- /.rq-main-footer -->
+      <div class="rq-copyright-section">
+        <div class="container">
+          <div class="copyright-content">
+            <p><a href="#"><img src="img/company-logo.png" alt=""></a> © 2016 <a href="#">Turbo, Inc</a>.</p>
+            <ul class="list-unstyled social-list">
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="#"><i class="fa fa-rss"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div> <!-- /.rq-copyright-section -->
+    </footer>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+    <script src="js/jquery.countdownTimer.min.js"></script>
+    <script src="js/timer.js"></script>
+  </body>
+</html>
